@@ -1,0 +1,171 @@
+div.trainerCard {
+  border-style:outset;
+  border-radius: 20px;
+  border-width: 25px;
+  border-color: #d5a530;
+  max-height:fit-content;
+  max-width:500px;
+  margin:auto;
+  width: 50%;
+  padding: 20px;
+  background-color: lightslategrey;
+  text-align: center;
+  margin-bottom: 50px
+  
+}
+
+div.trainerCard img {
+  /* max-width: 500px;
+  max-height: 500px;
+  border-style:solid;
+  border-color: rgb(197, 184, 112);
+  border-radius: 30px;
+  max-height:fit-content;
+  width: 100%;
+  margin: auto;
+  display: block;
+  object-fit:scale-down; */
+
+  
+    /* float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover; */
+
+    text-align: center;
+    max-width: 400px;
+    max-height: 250px;
+    /* padding-right: 30px;
+    padding-left: 30px; */
+    
+
+  
+}
+
+div.sessionCard img {
+  /* max-width: 500px;
+  max-height: 500px;
+  border-style:solid;
+  border-color: rgb(197, 184, 112);
+  border-radius: 30px;
+  max-height:fit-content;
+  width: 100%;
+  margin: auto;
+  display: block;
+  object-fit:scale-down; */
+
+  text-align: center;
+  max-width: 400px;
+  max-height: 250px;
+  /* padding-right: 30px; */
+}
+
+div.sessionCard {
+  border-style:outset;
+  border-radius: 20px;
+  border-width: 25px;
+  border-color: #d5a530;
+  max-height:fit-content;
+  max-width:500px;
+  margin:auto;
+  width: 50%;
+  padding: 20px;
+  background-color: lightslategrey;
+  text-align: center;
+  margin-bottom: 50px
+  
+}
+
+.trainerContainer {
+  /* display:flex;
+  flex-wrap:wrap; */
+  
+  
+  
+}
+
+.sessionsContainer{
+  /* display: flex;
+  flex-wrap:wrap */
+}
+
+h1.heading {
+  color: #d5a530;
+}
+
+.sessions {
+  color: #d5a530;
+}
+
+/* form {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(151, 13, 13);
+  border: 5px solid rgba(255, 255, 255, 0.514);
+  background: linear-gradient(rgb(255, 255, 255), rgba(173, 3, 3, 0.349));
+} */
+
+input.submit {
+  font-family: 'Bungee Shade';
+}
+
+label {
+  font-family: 'Bungee Shade';
+  color: #d5a530
+}
+
+button {
+  font-family: 'Bungee Shade';
+}
+
+body {
+  background-image: url(https://content.thriveglobal.com/wp-content/uploads/2019/07/Workout-And-Positivity-By-Mohit-Bansal-Chandigarh.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+strong {
+  font-family: 'Bungee Shade';
+  color: #d5a530
+}
+
+h4, h3, .greatness, .trainerContainer h1 {
+  color: #d5a530
+}
+
+h2.sessions, .trainerContainer h3, .greatness, .trainerContainer h1{
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #FF304F linear-gradient(
+180deg
+, #ff4f69, #FF304F) repeat-x;
+  border-color: #d5a530;
+  font-family: 'Bungee Shade';
+}
+
+div.container {
+  border-style:solid;
+  border-radius: 20px;
+  border-width: 5px;
+  /* border-color: #d5a530; */
+  background-color: black;
+}
+
+form {
+  font-family: 'Bungee Shade';
+}
+
+
+
+div.react-time-picker__wrapper {
+  background-color: white;
+}
+
+/* h2, h5 {
+  color: white;
+} */

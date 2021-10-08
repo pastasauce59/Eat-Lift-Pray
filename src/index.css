@@ -1,0 +1,16 @@
+/* div.trainerCard {
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+div.trainerCard {
+  flex-wrap: nowrap;
+  min-height: 100%;
+}
+
+.ui.grid {
+  padding: 0px 20px;
+} */
+
+
