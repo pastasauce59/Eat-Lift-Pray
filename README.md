@@ -4,6 +4,9 @@ Eat, Lift, Pray is a Clinet-Trainer application where you as a client can choose
 
 This is Eat Lift Pray's frontend repository. Please go [here](https://github.com/pastasauce59/eat-lift-pray-backend) for the backend repository.
 
+<img width="1152" alt="Screen Shot 2021-10-12 at 8 05 40 PM" src="https://user-images.githubusercontent.com/79714290/137046753-e7f9c657-2b7c-4265-8586-041c9ab74e3f.png">
+
+
 ## Technology used ⚙️: 
 - React frontend
 - Ruby Backend (2.6.1)
