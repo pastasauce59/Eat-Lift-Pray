@@ -48,13 +48,11 @@ class LoginForm extends Component {
         .then(client => 
             client.error ? alert(client.error) : this.props.clientLogin(client),
             this.setState({loginName: ""})
-            ) 
-    fetch('http://localhost:9292/clients')
-    .then(res => res.json())
+        ) 
+        fetch('http://localhost:9292/clients')
+        .then(res => res.json())
         .then(clients => clients.find(client =>  client.name.toLowerCase() === this.state.loginName.toLowerCase() ? this.props.clientLogin(client) : null)
         )
-        
-            
     }
     
    
@@ -95,10 +93,7 @@ class LoginForm extends Component {
         </form>
         <br></br>
         </div>
-     )
-     
-    }
-
+    )}
 }
 
 export default LoginForm

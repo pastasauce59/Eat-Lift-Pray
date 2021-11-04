@@ -53,13 +53,6 @@ class SessionCard extends Component {
         )
     }
     
-
-
-
-
 }
-
-
-
 
 export default SessionCard
