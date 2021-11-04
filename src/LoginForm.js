@@ -46,10 +46,7 @@ class LoginForm extends Component {
        })
         .then(res => res.json())
         .then(client => 
-            // console.log(client)
             client.error ? alert(client.error) : this.props.clientLogin(client),
-            // this.props.clientObject.name.length > 0 ? alert("logged in") : null,
-            console.log(this.props.clientObject),
             this.setState({loginName: ""})
             ) 
     fetch('http://localhost:9292/clients')
@@ -64,9 +61,7 @@ class LoginForm extends Component {
  
 
     render() {
-       
-        
-     return(
+       return(
         <div>
         <h4>Already a member? Login & Lift</h4>
         <form onSubmit={this.handleLogin}>
@@ -106,33 +101,4 @@ class LoginForm extends Component {
 
 }
 
-
-
-
 export default LoginForm
-
-
-
-// import React, { useState } from "react";
-// import DatePicker from "react-datepicker";
-
-// function ChooseDate() {
-    
-//     let [selectedDate, setSelectedDate] = useState("");
-
-//     console.log(selectedDate)
-    
-//     return (
-//             <div>
-//             <strong>Select a date:</strong>
-            
-//             <DatePicker 
-//             selected={selectedDate}
-//             onChange={date => setSelectedDate(date)}
-//             />
-            
-//             </div>
-//         )
-// }
-
-// export default ChooseDate

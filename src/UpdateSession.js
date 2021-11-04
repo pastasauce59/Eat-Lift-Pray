@@ -7,7 +7,6 @@ import "react-time-picker/dist/TimePicker.css"
 
 
 
-
 function UpdateSession(props) {
     let [workoutDescription, setDescription] = useState("")
     let [selectedDate, setSelectedDate] = useState(null);
@@ -35,7 +34,6 @@ function UpdateSession(props) {
           .then(res => res.json())
           .then(newSession => {
             props.updateSession(newSession)
-            console.log(newSession)
             setDescription("")
             setSelectedDate("")
             onChange("")
@@ -46,85 +44,76 @@ function UpdateSession(props) {
     }
 
   
-        return (
-            <div className="container">
-          <form onSubmit={handleSubmit} className="add-session-form" >
-            <h3>Edit your session details</h3>
-            <br/>
-            <label>
-            
-         <strong>Workout type:</strong>
-         <select
-          onChange={(e) => {setDescription(e.target.value)}}>
-          <option value="all">Select...</option>
-          <option value="cardio">Cardio</option>
-          <option value="weight training">Weight training</option>
-          <option value="calisthenic training">Calisthenic training</option>
-          <option value="strength training">Strength training</option>
-          </select>
-            </label>
-            <br/>
-            <strong>Select a date:</strong>
-            <DatePicker 
-            selected={selectedDate}
-            onChange={date => setSelectedDate(date)}
-            minDate={new Date()}
-            isClearable
-            />
-            <br/>
-            <strong>Select a time:</strong>
-            <br></br>
-            <TimePicker
-            onChange={onChange}
-            value={value}
-            />
-            <br/>
-            <strong>Session duration:</strong>
+  return (
+    <div className="container">
+      <form onSubmit={handleSubmit} className="add-session-form" >
+        <h3>Edit your session details</h3>
+        <br/>
+        <label>
+          <strong>Workout type:</strong>
             <select
-            onChange={(e) => {setDurationPrice(e.target.value)}}>
+              onChange={(e) => {setDescription(e.target.value)}}>
+              <option value="all">Select...</option>
+              <option value="cardio">Cardio</option>
+              <option value="weight training">Weight training</option>
+              <option value="calisthenic training">Calisthenic training</option>
+              <option value="strength training">Strength training</option>
+            </select>
+        </label>
+        <br/>
+        <strong>Select a date:</strong>
+        <DatePicker 
+          selected={selectedDate}
+          onChange={date => setSelectedDate(date)}
+          minDate={new Date()}
+          isClearable
+        />
+        <br/>
+        <strong>Select a time:</strong>
+        <br></br>
+        <TimePicker
+          onChange={onChange}
+          value={value}
+        />
+        <br/>
+        <strong>Session duration:</strong>
+        <select
+          onChange={(e) => {setDurationPrice(e.target.value)}}>
           <option value="all">Select...</option>
           <option value={75}>30 min session = $75</option>
           <option value={100}>1 hour session = $100</option>
           <option value={150}>2 hour session = $150</option>
-          </select>
-          <br/>
-          <strong>Choose trainer:</strong>
-          <select onChange={(e) => {setTrainerId(e.target.value)}}>
-              <option value='all'>Select trainer</option>
-              <option value={1}>Arnold Schwarzenegger</option>
-              <option value={2}>Jason Statham</option>
-              <option value={3}>Sylvester Stallone</option>
-              <option value={4}>Terry Crews</option>
-              <option value={5}>Jet Li</option>
-              <option value={6}>The Rock</option>
-              <option value={7}>Wesley Snipes</option>
-              <option value={8}>Chuck Norris</option>
-              <option value={9}>Chris Hemsworth</option>
-              <option value={10}>Jason Momoa</option>
-              <option value={11}>Ronda Rousey</option>
-              <option value={12}>Gal Gadot</option>
-              <option value={13}>The hulk</option>    
-          </select>
-          <br/>
-          <br></br>
-            <input 
-                type="submit" 
-                name="submit" 
-                value="Save changes" 
-                className="submit"
-                class="btn btn-primary mr-1"
-            />
-          </form>
-        </div>
-        )
-  
-
-
-
-
+        </select>
+        <br/>
+        <strong>Choose trainer:</strong>
+        <select onChange={(e) => {setTrainerId(e.target.value)}}>
+          <option value='all'>Select trainer</option>
+          <option value={1}>Arnold Schwarzenegger</option>
+          <option value={2}>Jason Statham</option>
+          <option value={3}>Sylvester Stallone</option>
+          <option value={4}>Terry Crews</option>
+          <option value={5}>Jet Li</option>
+          <option value={6}>The Rock</option>
+          <option value={7}>Wesley Snipes</option>
+          <option value={8}>Chuck Norris</option>
+          <option value={9}>Chris Hemsworth</option>
+          <option value={10}>Jason Momoa</option>
+          <option value={11}>Ronda Rousey</option>
+          <option value={12}>Gal Gadot</option>
+          <option value={13}>The hulk</option>    
+        </select>
+        <br/>
+        <br></br>
+        <input 
+          type="submit" 
+          name="submit" 
+          value="Save changes" 
+          className="submit"
+          class="btn btn-primary mr-1"
+        />
+      </form>
+    </div>
+  )
 }
-
-
-
 
 export default UpdateSession

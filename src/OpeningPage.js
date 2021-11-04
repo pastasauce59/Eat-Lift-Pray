@@ -23,11 +23,8 @@ export default class Opening extends React.Component {
                 
                 <br></br>
                 <Link to= "/loginForm">
-                <button class="btn btn-primary mr-1">LoginForm</button>
+                <button class="btn btn-primary mr-1">Login</button>
                 </Link>
-                {/* <Link to= "/sorter">
-                <button>LoginForm</button>
-                </Link> */}
             </div>
         )
     }
